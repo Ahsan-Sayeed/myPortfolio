@@ -69,7 +69,10 @@ function Header(props) {
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
-              {greeting.logo_name}
+              {greeting.logo_name.slice(0, 5)}
+              <span style={{ color: "rgb(252,16,86)" }}>
+                {greeting.logo_name.slice(5, 12)}{" "}
+              </span>
             </span>
             <span style={{ color: theme.text }}></span>
           </NavLink>
@@ -132,19 +135,6 @@ function Header(props) {
               >
                 Contact and Resume
               </NavLink>
-            </li>
-            <li>
-              <a
-                className="cr"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://play.google.com/store/apps/details?id=com.picle.journalify"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
-                Journalify
-              </a>
             </li>
             <button {...styles} onClick={changeTheme}>
               {icon}

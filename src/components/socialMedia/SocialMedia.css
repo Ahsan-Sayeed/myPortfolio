@@ -1,5 +1,14 @@
 .social-media-div {
   font-size: 2em;
+  position: fixed;
+  top: 50%;
+  right: -6rem;
+  transform: rotate(90deg);
+}
+@media only screen and (max-width: 600px) {
+  .social-media-div {
+    top: 71%;
+  }
 }
 
 .icon-button i {

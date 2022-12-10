@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "./BlogsImg";
+import BlogsImg, { BlogsImg2 } from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
@@ -28,11 +28,7 @@ function Contact(props) {
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
-              <img
-                className="profile-pic"
-                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
-                alt=""
-              />
+              <BlogsImg2 theme={theme} />
             </div>
             <div className="contact-heading-text-div">
               <h1
@@ -47,7 +43,6 @@ function Contact(props) {
               >
                 {ContactData["description"]}
               </p>
-              <SocialMedia />
               <br />
               <br />
               <a {...styles} className="general-btn" href={greeting.resumeLink}>
@@ -81,6 +76,7 @@ function Contact(props) {
         </Fade>
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
+      <SocialMedia />
     </div>
   );
 }

@@ -11,7 +11,10 @@ export default function socialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-github"></i>
+        <i
+          className="fab fa-github"
+          style={{ transform: "rotate(270deg)" }}
+        ></i>
         <span></span>
       </a>
       <a
@@ -20,7 +23,10 @@ export default function socialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-linkedin-in"></i>
+        <i
+          className="fab fa-linkedin-in"
+          style={{ transform: "rotate(270deg)" }}
+        ></i>
         <span></span>
       </a>
       <a
@@ -29,7 +35,10 @@ export default function socialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-google"></i>
+        <i
+          className="fab fa-google"
+          style={{ transform: "rotate(270deg)" }}
+        ></i>
         <span></span>
       </a>
       <a
@@ -38,7 +47,10 @@ export default function socialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-twitter"></i>
+        <i
+          className="fab fa-twitter"
+          style={{ transform: "rotate(270deg)" }}
+        ></i>
         <span></span>
       </a>
       <a
@@ -47,7 +59,10 @@ export default function socialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-instagram"></i>
+        <i
+          className="fab fa-instagram"
+          style={{ transform: "rotate(270deg)" }}
+        ></i>
         <span></span>
       </a>
     </div>
